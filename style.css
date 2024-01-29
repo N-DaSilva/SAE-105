@@ -1,0 +1,361 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Press start 2p', sans-serif;
+    background-image: url(img/fond.gif);
+    background-size: auto;
+    background-attachment: fixed;
+    margin: 0;
+    margin-top: 50px;
+    line-height: 1.6;
+}
+
+main {
+    margin-top: 100vh;
+    max-width: 1275px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 50px;
+    color: white;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-family: 'Oi', serif;
+    color: white;
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.ligne {
+    padding: 50vh;
+}
+
+img {
+    max-width: 1150px;
+}
+
+.popup {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup img {
+    max-width: 70vw;
+    max-height: 50vw;
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.popup-invisible {
+    display: none;
+}
+
+.popup-visible {
+    display: block;
+}
+
+.petit {
+    margin-top: 100px;
+    width: 90vw;
+    height: 70vh;
+    object-fit: cover;
+    border-radius: 100px;
+    border: double 10px white;
+}
+
+img[src='img/rockyhorror.jpg'].petit {
+    object-position: 0 12%;
+}
+
+img[src='img/voyageur.jpg'].petit {
+    object-position: 0 42%;
+}
+
+.cache-fenetre {
+    text-align: center;
+    padding: 7px;
+    margin: 20px;
+    font-size: 2rem;
+    color: white;
+    float: right;
+    transition: ease 0.15s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: default;
+}
+
+.cache-fenetre:hover {
+    background-color: white;
+    color: black;
+    padding-right: 50px;
+}
+
+legend {
+    font-weight: bold;
+    padding: 10px;
+    font-size: 1.5rem;
+}
+
+fieldset {
+    text-align: center;
+    color: white;
+    margin-top: 200px;
+    border: none;
+    margin-bottom: 20px;
+
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    line-height: 3;
+}
+
+input {
+    font-family: 'Press start 2p', sans-serif;
+    border: none;
+    border-bottom: solid white 3px;
+    background: transparent;
+    color: white;
+    width: 200px;
+    height: 25px;
+}
+
+input:focus {
+    outline: solid lightblue 2px;
+    border-radius: 5px;
+}
+
+input#lien-img {
+    margin-top: 30px;
+    width: 500px;
+}
+
+input[type="button"] {
+    margin-top: 5px;
+    border: none;
+    height: 30px;
+    width: auto;
+    padding: 7px;
+    color: white;
+    transition: ease 0.15s;
+}
+
+input[type="button"]:hover {
+    padding-right: 25px;
+    background-color: white;
+    color: black;
+}
+
+textarea {
+    background: transparent;
+    border: none;
+    border-bottom: solid white 3px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Press start 2p', sans-serif;
+}
+
+textarea:focus {
+    outline: lightblue 2px solid;
+}
+
+.reponse {
+    color: white;
+    text-align: center;
+    display: none;
+}
+
+.lien {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.lien a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    transition: ease 0.15s;
+}
+
+.lien a:hover {
+    background-color: blue;
+    color: white;
+    padding-left: 25px;
+}
+
+.nav {
+    line-height: 2.5;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    padding: 2px;
+    padding-right: 10vw;
+    transition: ease 0.1s;
+}
+
+.nav a:hover {
+    padding-left: 25px;
+}
+
+a[href="#couleur"]:hover {
+    background-color: hotpink;
+    color: white;
+}
+
+a[href="#film"]:hover {
+    background-color: red;
+    color: white;
+}
+
+a[href="#livre"]:hover {
+    background-color: lime;
+    color: black;
+}
+
+a[href="#animal"]:hover {
+    background-color: orange;
+    color: black;
+}
+
+a[href="#fleur"]:hover {
+    background-color: gold;
+    color: black;
+}
+
+a[href="#peinture"]:hover {
+    background-color: lightskyblue;
+    color: black;
+}
+
+a[href="#paysage"]:hover {
+    background-color: rgb(183, 0, 255);
+    color: white;
+}
+
+header {
+    padding: 10px;
+    border: double white 10px;
+    margin-bottom: 20px;
+    border-radius: 50px;
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+footer {
+    margin-top: 50px;
+    background: linear-gradient(rgba(0, 0, 0, 0) 0.1%, black);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    display: flex;
+}
+
+footer .mentions-legales {
+    margin: auto;
+    transition: ease 0.15s;
+    padding: 5px;
+}
+
+footer .mentions-legales:hover {
+    background-color: white;
+    color: black;
+    padding-right: 25px;
+    cursor: default;
+}
+
+footer p {
+    text-align: center;
+}
+
+.ml a {
+    transition: ease 0.1;
+    color: white;
+    text-decoration: none;
+}
+
+.ml a:hover {
+    background-color: transparent;
+    color: yellow;
+}
+
+.ml {
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(0, 0, 227);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 7px 7px 0px 0px rgba(255, 255, 255, 0.4);
+    border: double white 5px;
+    width: 75%;
+    max-width: 800px;
+    max-height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.cache-credits {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: black;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    z-index: 2;
+}
+
+.cache-credits:hover {
+    color: black;
+    background-color: white;
+}
+
+.titre {
+    font-weight: bold;
+    font-size: 1.15rem;
+    margin-bottom: 30px;
+}
+
+.copyright {
+    font-size: 0.75rem;
+}
+
+.p-prec {
+    float: left;
+}
+
+.p-prec:hover {
+    color: black;
+}
+
+.p-suiv {
+    float: right;
+}
+
+.p-suiv:hover {
+    color: black;
+}

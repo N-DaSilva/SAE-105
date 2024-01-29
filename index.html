@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait chinois - Noor DS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oi&family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <h1>Si j'étais...</h1>
+        <ul class="nav">
+            <li><a href="#couleur">une couleur</a></li>
+            <li><a href="#film">un film</a></li>
+            <li><a href="#livre">un livre</a></li>
+            <li><a href="#animal">un animal</a></li>
+            <li><a href="#fleur">une fleur</a></li>
+            <li><a href="#peinture">une peinture</a></li>
+            <li><a href="#paysage">un paysage</a></li>
+        </ul>
+    </header>
+    <main>
+        <div class="liste-analogies">
+        </div>
+        <div class="analogies-supplementaires">
+            <section class="supplementaire"></section>
+        </div>
+        <div class="popup popup-invisible">
+            <img src="" alt="">
+            <span class="cache-fenetre">Masquer</span>
+        </div>
+    </main>
+    <p class="lien"><a href="#top">Haut de page</a></p>
+    <form action="">
+        <fieldset>
+            <legend>À votre tour !</legend>
+            <p>(Le formulaire doit être entièrement rempli)</p>
+            <p><label for="email">Email :</label>
+            <input type="email" id="email" placeholder="abcd@gmail.com"></p>
+            <p>
+                <label for="analogie">Si j'étais...</label>
+                <input type="text" id="analogie" placeholder="une chanson">
+                <label for="valeur">, je serais...</label>
+                <input type="text" id="valeur" placeholder="Starman">
+                <br>
+                <label for="explication"> Parce que... </label>
+                <textarea name="car" id="explication" cols="40" rows="1" placeholder="There's a starman..."></textarea>.
+                <br>
+                <label for="lien-img">Lien de l'image</label>
+                <input type="text" id="lien-img" placeholder="http://lien de l'image.com/image">
+            </p>
+            <p><input type="button" value="Envoyer"></p>
+        </fieldset>
+        <span class="reponse">Analogie ajoutée !</span>
+    </form>
+    <footer>
+    <span class="mentions-legales">Mentions légales</span>
+</footer>
+</body>
+
+
+
+<div class="ml">
+    <span class="cache-credits">X</span>
+    <div class="page1">
+        <p class="titre">Éditeur :</p>
+        <p>Noor Da Silva, étudiant de l'Université Gustave Eiffel</p>
+        <p class="titre">Hébergeur :</p>
+        <p>Université Gustave Eiffel</p>
+        <p>5 boulevard Descartes - Champs-sur-Marne - 77454 Marne-la-Vallée Cedex2</p>
+        <p>Tél&nbsp;:&nbsp;33(1).60.95.75.00 - Fax&nbsp;:&nbsp;33(1).60.95.75.75</p>
+    </div>
+
+    <div class="page2">
+        <p class="titre">Crédits images :</p>
+        <p><a
+                href="https://pixabay.com/fr/users/smdesigns-241221/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=413269">Dianne</a>
+            de <a
+                href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=413269">Pixabay</a>
+        </p>
+        <p><a
+                href="https://th.bing.com/th/id/R.eed7adce1d999a5988fb077408e621fa?rik=%2fnflkSIF4GahSQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-M-24oq_XHvs%2fUSEKJSctp1I%2fAAAAAAAANbI%2fdyZgyhdQvfA%2fs1600%2frockyhorrorpictureshow_poster01.jpg&ehk=qhL5qhVGaiXa5q2XeDpnRCJMhlcnrUwSGDqXssNLNUQ%3d&risl=&pid=ImgRaw&r=0">Twentieth
+                Century Fox</a></p>
+        <p><a href="https://www.nasa.gov/image-detail/cluster-in-the-cloud/">NASA</a></p>
+        <p><a
+                href="https://pixabay.com/fr/users/robertgreene674-1080919/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=794962">Robert
+                Greene</a> de <a
+                href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=794962">Pixabay</a>
+        </p>
+        <p><a
+                href="https://pixabay.com/fr/users/bru-no-1161770/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4543580">Bruno</a>
+            de <a
+                href="https://pixabay.com/fr//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4543580">Pixabay</a>
+        </p>
+        <p><a
+                href="https://www.hamburger-kunsthalle.de/sites/default/files/styles/hkh_lightbox_full_wide_x2/public/ueber-die-sammlung-19-jahrhundert-caspar-david-friedrich-wanderer-ueber-dem-nebelmeer.jpg">Kunsthalle
+                de Hambourg</a></p>
+        <p>Favicon par Noor Da Silva</p>
+    </div>
+
+    <div class="page3">
+        <p class="titre">Législation relative aux données à caractère personnel :</p>
+        <p>
+            Le formulaire permettant d'ajouter une analogie personnalisée recueille votre adresse de courriel et
+            votre adresse
+            IP. Pour toute question portant sur la collecte et le traitement de vos données par
+            l’Université Gustave Eiffel, vous
+            pouvez contacter la personne responsable du traitement des données qui est : Philippe Gambette
+            (philippe.gambette@univ-eiffel.fr). Les données personnelles détenues par l'Université Gustave Eiffel ne
+            seront jamais transmise à des tiers, ne feront jamais l'objet d'une commercialisation, et seront supprimées sous un an.
+        </p>
+    </div>
+    <span class="p-prec"><--</span>
+    <span class="p-suiv">--></span>
+    <p class="copyright">©Tous droits réservé - 2024 - Noor DA SILVA</p>
+</div>
+
+<script src="script.js"></script>
+
+</html>
